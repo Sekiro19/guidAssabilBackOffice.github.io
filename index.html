@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/output.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Assabil Back-office Training manual</title>
+</head>
+<body>
+    <main class="max-w-7xl mx-auto md:p-8 p-4">
+        <img class="md:w-24 md:h-24 w-12 h-12" src="img/logo-danone.png" alt="logo danone">
+        <div class="md:space-y-8 space-y-4 text-center">
+            <img class="w-auto md:h-32 h-16 mx-auto" src="img/logo-assabil.png" alt="logo assabil">
+            <h1 class="md:text-5xl text-2xl text-blue-800 font-bold">Assabil Back-office Training manual</h1>
+            <div class="space-y-2">
+              <h1 class="md:text-3xl text-xl text-blue-800 font-bold">User Manual</h1>
+              <h2 class="md:text-2xl text-lg text-blue-800">Version : 1.0</h2>
+            </div>
+        </div>
+        <div class="py-2 inline-block min-w-full sm:px-6 lg:px-8 overflow-hidden space-y-4">
+          <div class="flex items-center justify-end">
+            <input id="filter" type="search" name="q" class="h-12 md:w-64 w-full text-lg placeholder:text-gray-400 focus:outline-none p-4" aria-label="Filtre" placeholder="Filtre" value="">
+            <div class="flex items-center bg-black justify-center w-12 h-12 text-white">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                </svg>
+            </div>
+          </div>
+          <!-- Table -->
+          <table class="min-w-full">
+            <thead class="bg-gray-200 border-b">
+              <tr>
+                <th scope="col" class="w-[1%] whitespace-nowrap md:text-lg text-sm font-medium text-gray-900 px-6 py-4 text-left">#</th>
+                <th scope="col" class="md:text-lg text-sm font-medium text-gray-900 px-6 py-4 text-left">Table des matières</th>
+              </tr>
+            </thead>
+            <tbody id="docs-list">
+              <!-- 1 -->
+              <tr class="bg-white border-b transition duration-300 ease-in-out hover:bg-gray-100">
+                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900 align-top">1</td>
+                <td class="md:text-lg text-base text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                  <div class="tab relative">
+                    <input class="w-full absolute z-10 cursor-pointer opacity-0 h-full top-0" type="checkbox" id="L1">
+                    <header class="flex justify-between items-center cursor-pointer select-none tab-label" for="L1">
+                      <a class="hover:underline hover:decoration-gray-500 z-10" href="docs/d1.html">Mise en Route</a>
+                      <div class="rotate-svg">
+                          <svg aria-hidden="true" class="" data-reactid="266" fill="none" height="24" stroke="#606F7B" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                              <polyline points="6 9 12 15 18 9">
+                              </polyline>
+                          </svg>
+                      </div>
+                    </header>
+                    <div class="tab-content">
+                      <div class="inline-flex flex-col">
+                        <ol class="z-10 list-inside list-roman space-y-2 ml-4 mt-4">
+                          <li><a class="hover:underline hover:decoration-gray-500" href="docs/d1.html#s1">Accès à l'Application Assabil</a></li>
+                          <li><a class="z-10 hover:underline hover:decoration-gray-500" href="docs/d1.html#s2">Connection</a></li>
+                        </ol>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <!-- 2 -->
+              <tr class="bg-white border-b transition duration-300 ease-in-out hover:bg-gray-100">
+                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900 align-top">2</td>
+                <td class="md:text-lg text-base text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                  <a class="hover:underline hover:decoration-gray-500" href="docs/d2.html">Fonctionnalités et Fonctions</a>
+                </td>
+              </tr>
+              <!--  -->
+              <tr class="bg-white border-b transition duration-300 ease-in-out">
+                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900"></td>
+                <td class="md:text-lg text-base text-gray-900 font-light px-6 py-4 whitespace-nowrap">Opérations et actions</td>
+              </tr>
+              <!-- 3 -->
+              <tr class="bg-white border-b transition duration-300 ease-in-out hover:bg-gray-100">
+                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900 align-top">3</td>
+                <td class="md:text-lg text-base text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                  <div class="tab relative">
+                    <input class="w-full absolute z-10 cursor-pointer opacity-0 h-full top-0" type="checkbox" id="L2">
+                    <header class="flex justify-between items-center cursor-pointer select-none tab-label" for="L2">
+                      <a class="hover:underline hover:decoration-gray-500 z-10" href="docs/d3.html">Achat – Stock</a>
+                      <div class="rotate-svg">
+                          <svg aria-hidden="true" class="" data-reactid="266" fill="none" height="24" stroke="#606F7B" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                              <polyline points="6 9 12 15 18 9">
+                              </polyline>
+                          </svg>
+                      </div>
+                    </header>
+                    <div class="tab-content">
+                      <div class="inline-flex flex-col ">
+                        <ol class="z-10 list-inside list-roman space-y-2 ml-4 mt-4">
+                          <li><a class="hover:underline hover:decoration-gray-500" href="docs/d3.html#s1">Enregistrement des Mouvements de Stock</a></li>
+                          <li><a class="hover:underline hover:decoration-gray-500" href="docs/d3.html#s2">Gérer l'inventaire de stock.</a></li>
+                          <ol class="z-10 list-inside list-lowerAlpha">
+                            <li class="ml-4"><a class="hover:underline hover:decoration-gray-500" href="docs/d3.html#s2-a">Afficher les inventaire.</a></li>
+                            <li class="ml-4"><a class="hover:underline hover:decoration-gray-500" href="docs/d3.html#s2-b">Ajouter ou modifier un inventaire.</a></li>
+                            <li class="ml-4"><a class="hover:underline hover:decoration-gray-500" href="docs/d3.html#s2-c">Fermez un inventaire ouvert.</a></li>
+                          </ol>
+                        </ol>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+    </main>
+    <!-- JS -->
+    <script type="text/javascript" src="js/jquery-3.7.1.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $("#filter").on("keyup input", function() {
+          var value = removeDiacritics($(this).val().toLowerCase());
+          $("tbody tr").filter(function() {
+            var rowText = removeDiacritics($(this).text().toLowerCase());
+            var match = rowText.indexOf(value) > -1;
+            $(this).toggle(match);
+            if (match) {
+              $(this).find('input[type="checkbox"]').prop('checked', true);
+            }
+          });
+        });
+
+        function removeDiacritics(str) {
+            return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+        }
+      });
+    </script>
+</body>
+</html>
