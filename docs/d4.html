@@ -20,59 +20,134 @@
         </div>
         <h1 class="md:text-3xl text-xl text-center text-blue-900 md:mb-16 mb-8">Transfert des commandes.</h1>
         <div class="space-y-8">
-            <div>
+            <div class="md:space-y-12 space-y-5">
                 <h2 id="s1" class="md:text-xl text-lg">I- Dispatch manuel.</h2>
-                <p class="text-right md:text-sm text-xs text-gray-600">Role: ADV</p>
-                <ol class="list-decimal text-base md:space-y-4 space-y-2 pl-10">
-                    <li>.</li>
-                </ol>
-            </div>
-            <!-- Glider -->
-            <div class="relative overflow-hidden w-full h-full glider-contain border-2 border-blue-900">
-                <div class="glider overflow-hidden">
-                    <div class="flex justify-center items-center">
-                        <img loading="lazy" data-enlargable src="images/13.png" class="lazyloaded md:w-[600px] w-72">
-                    </div>
-                    <div class="flex justify-center items-center">
-                        <img loading="lazy" data-enlargable src="images/14.png" class="lazyloaded md:w-[600px] w-72">
-                    </div>
-                    <div class="flex justify-center items-center">
-                        <img loading="lazy" data-enlargable src="images/15.png" class="lazyloaded object-top object-contain">
-                    </div>
-                    <div class="flex justify-center items-center">
-                        <img loading="lazy" data-enlargable src="images/16.png" class="lazyloaded object-top object-contain">
-                    </div>
-                    <div class="flex justify-center items-center">
-                        <img loading="lazy" data-enlargable src="images/17.png" class="lazyloaded object-top object-contain">
-                    </div>
-                    <div class="flex justify-center items-center">
-                        <img loading="lazy" data-enlargable src="images/18.png" class="lazyloaded object-top object-contain">
-                    </div>
+                <div>
+                    <h3 id="s1-a" class="ml-6 md:text-lg text-base">a- Initialiser le dispatch.</h3>
+                    <p class="text-right md:text-sm text-xs text-gray-600">Role: ADV</p>
+                    <ol class="list-decimal list-inside text-base md:space-y-4 space-y-2 pl-10">
+                        <li>Accédez à la page Demandes de Transfert.</li>
+                        <li>Clicker sur le bouton "Ajouter" pour démarrer le dispatch.</li>
+                        <li>Cliquer sur la "zone grise" pour sélectionner le récepteur.</li>
+                        <li>Ajouter le nom d'utilisateur, sélectionner l'agence, et cliquer sur "Charger données".</li>
+                        <li>Sélectionnez votre récepteur et cliquez sur "Dispatch Manuel".</li>
+                        <div class="md:ml-12 ml-6">
+                            <p class="border-l-4 border-blue-900 p-4">Une fenêtre apparaîtra vous permettant de sélectionner les commandes. Vous devrez simplement filtrer les commandes que vous souhaitez transférer.</p>
+                        </div>
+                        <li>Pour filtrer les commandes, utilisez le nom d'utilisateur du "Prévendeur", la date de début (un jour avant la commande), ou l'identifiant du "bon de commande".</li>
+                        <li>Ensuite, cliquez sur "Charger données" pour afficher les commandes qui ont été prises par le "Prévendeur".</li>
+                        <li>Assurez-vous de vérifier les bonnes commandes, puis choisissez entre transférer toutes en une fois en cliquant sur "Ajouter Tout", ou transférer une par une en cliquant sur la ligne de commande.</li>
+                        <li>Ensuite, cliquez sur le bouton "Valider" pour terminer avec succès la première partie de la dispatch.</li>
+                        <div class="md:ml-12 ml-6">
+                            <p class="border-l-4 border-blue-900 p-4">Pour vérifier que vous êtes sur la bonne voie, vous pouvez retourner à la page "Demandes de Transfert" et utiliser le filtre pour trouver la nouvelle demande de transfert avec le statut "10-soumis au magasinier".</p>
+                        </div>
+                        <div class="flex items-center text-blue-900 font-semibold">Dispatch status &nbsp;<div class="bg-[#FFA500] rounded-lg w-fit text-sm text-center p-2 text-white">10 - soumis au magasinier</div></div>
+                        <!-- Glider-0 -->
+                        <div class="relative overflow-hidden w-full h-full glider-contain border-2 border-blue-900">
+                            <div class="glider overflow-hidden">
+                                <div class="flex justify-center items-center">
+                                    <img loading="lazy" data-enlargable src="images/13.png" class="lazyloaded md:w-[600px] w-72">
+                                </div>
+                                <div class="flex justify-center items-center">
+                                    <img loading="lazy" data-enlargable src="images/14.png" class="lazyloaded md:w-[600px] w-72">
+                                </div>
+                                <div class="flex justify-center items-center">
+                                    <img loading="lazy" data-enlargable src="images/15.png" class="lazyloaded object-top object-contain">
+                                </div>
+                                <div class="flex justify-center items-center">
+                                    <img loading="lazy" data-enlargable src="images/16.png" class="lazyloaded object-top object-contain">
+                                </div>
+                            </div>
+                            <button id="g-prev-0" aria-label="Previous"  type="button" class="g-prev absolute top-0 left-0 z-10 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none">
+                                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
+                                    <svg class="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                                    </svg>
+                                    <span class="sr-only">Previous</span>
+                                </span>
+                            </button>
+                            <button id="g-next-0" aria-label="Next" type="button" class="absolute top-0 right-0 z-10 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none">
+                                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
+                                    <svg class="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                                    </svg>
+                                    <span class="sr-only">Next</span>
+                                </span>
+                            </button>
+                            <button type="button" class="btn-zoom-img w-[34px] h-[34px] bg-white rounded-full border border-black absolute bottom-0 right-0 flex items-center justify-center mr-4 mb-4 cursor-zoom-in z-20">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="w-[20px] h-[20px]">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM10.5 7.5v6m3-3h-6" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div role="tablist" id="dots-0" class="dots z-20"></div>
+                    </ol>
                 </div>
-                <button id="g-prev-0" aria-label="Previous"  type="button" class="g-prev absolute top-0 left-0 z-10 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none">
-                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
-                        <svg class="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
-                        </svg>
-                        <span class="sr-only">Previous</span>
-                    </span>
-                </button>
-                <button id="g-next-0" aria-label="Next" type="button" class="absolute top-0 right-0 z-10 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none">
-                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
-                        <svg class="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
-                        </svg>
-                        <span class="sr-only">Next</span>
-                    </span>
-                </button>
-                <button type="button" class="btn-zoom-img w-[34px] h-[34px] bg-white rounded-full border border-black absolute bottom-0 right-0 flex items-center justify-center mr-4 mb-4 cursor-zoom-in z-20">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="w-[20px] h-[20px]">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM10.5 7.5v6m3-3h-6" />
-                    </svg>
-                </button>
+                <div>
+                    <h3 id="s1-b" class="ml-6 md:text-lg text-base">b- Valider le chargement</h3>
+                    <p class="text-right md:text-sm text-xs text-gray-600">Role: GDS</p>
+                    <ol class="list-decimal list-inside text-base md:space-y-4 space-y-2 pl-10">
+                        <li>Accédez à la page 'Demandes de Transfert' et chargez les données. Sélectionnez le transfert identifié par le statut 'warehouseTransfer.pl-submittedToStorekeeper' (rectangle orange)</li>
+                        <li>Vérifiez la quantité à affecter, puis cliquez sur 'Valider'.</li>
+                        <div class="flex items-center text-blue-900 font-semibold">Dispatch status &nbsp;<div class="bg-[#8F8579] rounded-lg w-f text-sm p-2 text-white">30 - Ajusté</div></div>
+                        <li>Cliquez sur le bouton 'Soumettre Au Vendeur' pour transmettre les bons de livraison au compte du vendeur.</li>
+                        <div class="flex items-center text-blue-900 font-semibold">Dispatch status &nbsp;<div class="bg-[#D3D3D3] rounded-lg w-fit text-sm text-center p-2 text-white">40 - Soumis au vendeur</div></div>
+                        <li>Connectez-vous au compte du vendeur (DLV/VDD), puis effectuez une synchronisation complète.</li>
+                        <div class="flex items-center text-blue-900 font-semibold">Dispatch status &nbsp;<div class="bg-[#FF00FF] rounded-lg w-f text-sm p-2 text-white">45 - Synchronisé</div></div>
+                        <li>Accédez à la page 'Demandes de déchargement' identifié le chargement par le statut (40), puis cliquez sur "Valider".</li>
+                        <li>Cliquez "la flèche next".</li>
+                        <li>Cliquez "Valider".</li>
+                        <li>Confirmer la validation du chargement "OUI".</li>
+                        <li>Retournez à la page 'Demandes de déchargement'. Vous remarquerez que le statut est maintenant (50). Cliquez simplement sur l'icône de synchronisation et attendez que la synchronisation se termine.</li>
+                        <div class="flex items-center text-blue-900 font-semibold">Dispatch status &nbsp;<div class="bg-[#008000] rounded-lg w-f text-sm p-2 text-white">50 - Acceptée</div></div>   
+                        <!-- Glider-1 -->
+                        <div class="relative overflow-hidden w-full h-full glider-contain border-2 border-blue-900">
+                            <div class="glider overflow-hidden">
+                                <div class="flex justify-center items-center">
+                                    <img loading="lazy" data-enlargable src="images/17.png" class="lazyloaded object-top object-contain">
+                                </div>
+                                <div class="flex justify-center items-center">
+                                    <img loading="lazy" data-enlargable src="images/18.png" class="lazyloaded object-top object-contain">
+                                </div>
+                                <div class="flex justify-center items-center">
+                                    <img loading="lazy" data-enlargable src="images/19.png" class="lazyloaded object-top object-contain">
+                                </div>
+                                <div class="flex justify-center items-center">
+                                    <img loading="lazy" data-enlargable src="images/20.png" class="lazyloaded object-top object-contain">
+                                </div>
+                                <div class="flex justify-center items-center">
+                                    <img loading="lazy" data-enlargable src="images/21.png" class="lazyloaded object-top object-contain">
+                                </div>
+                                <div class="flex justify-center items-center">
+                                    <img loading="lazy" data-enlargable src="images/22.png" class="lazyloaded object-top object-contain">
+                                </div>
+                            </div>
+                            <button id="g-prev-1" aria-label="Previous"  type="button" class="g-prev absolute top-0 left-0 z-10 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none">
+                                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
+                                    <svg class="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                                    </svg>
+                                    <span class="sr-only">Previous</span>
+                                </span>
+                            </button>
+                            <button id="g-next-1" aria-label="Next" type="button" class="absolute top-0 right-0 z-10 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none">
+                                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
+                                    <svg class="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                                    </svg>
+                                    <span class="sr-only">Next</span>
+                                </span>
+                            </button>
+                            <button type="button" class="btn-zoom-img w-[34px] h-[34px] bg-white rounded-full border border-black absolute bottom-0 right-0 flex items-center justify-center mr-4 mb-4 cursor-zoom-in z-20">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="w-[20px] h-[20px]">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM10.5 7.5v6m3-3h-6" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div role="tablist" id="dots-1" class="dots z-20"></div>
+                    </ol>
+                </div>
             </div>
-            <div role="tablist" id="dots-0" class="dots z-20"></div>
-
         </div>
     </main>
     <script type="text/javascript" src="../js/jquery-3.7.1.min.js"></script>
