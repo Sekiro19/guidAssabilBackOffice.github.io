@@ -10,14 +10,11 @@
 </head>
 <body>
     <main class="max-w-5xl mx-auto md:p-8 p-4">
-        <div class="flex items-center justify-between">
-            <div></div>
-            <a class="hover:bg-gray-200 w-12 h-12 flex items-center justify-center" href="../index.html">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="md:w-8 md:h-8 w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 15L3 9m0 0l6-6M3 9h12a6 6 0 010 12h-3" />
-                </svg>                  
-            </a>
-        </div>
+        <a class="hover:bg-gray-200 w-12 h-12 flex items-center justify-center fixed md:right-4 right-2 md:top-4 top-2" href="../index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="md:w-8 md:h-8 w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 15L3 9m0 0l6-6M3 9h12a6 6 0 010 12h-3" />
+            </svg>                  
+        </a>
         <h1 class="md:text-3xl text-xl text-center text-blue-900 md:mb-16 mb-8">Achat – Stock</h1>
         <div class="space-y-8">
             <div>
@@ -39,135 +36,137 @@
                     </svg>
                 </button>
             </div>
-            <div class="md:space-y-12 space-y-5">
+            <div class="space-y-4">
                 <h2 id="s2" class="md:text-xl text-lg">II- Gérer l'inventaire de stock.</h2>
-                <div class="">
-                    <h3 id="s2-a" class="ml-6 md:text-lg text-base">a- Afficher les inventaire.</h3>
-                    <p class="text-right md:text-sm text-xs text-gray-600">Role: ADV, GDS</p>
-                    <ol class="list-decimal list-inside text-base md:space-y-4 space-y-2 pl-10">
-                        <li>Accédez à la page Inventaire.</li>
-                        <li>Cliquez sur le bouton "Filtre de recherche".</li>
-                        <li>Remplissez les filtres que vous souhaitez utiliser ou laissez-les vides pour afficher l'ensemble de l'inventaire disponible.</li>
-                        <li>Cliquez sur "Charger données" pour afficher les inventaires disponibles et leurs statuts.</li>
-                        <div class="relative overflow-hidden w-full h-full border-2 border-blue-900">
-                            <img loading="lazy" data-enlargable src="images/4.png" class="lazyloaded object-contain">
-                            <button type="button" class="btn-zoom-img w-[34px] h-[34px] bg-white rounded-full border border-black absolute bottom-0 right-0 flex items-center justify-center mr-4 mb-4 cursor-zoom-in">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="w-[20px] h-[20px]">
+                <div class="md:space-y-8 space-y-4">
+                    <div>
+                        <h3 id="s2-A" class="ml-6 md:text-lg text-base">A- Afficher les inventaire.</h3>
+                        <p class="text-right md:text-sm text-xs text-gray-600">Role: ADV, GDS</p>
+                        <ol class="list-decimal list-inside text-base md:space-y-4 space-y-2 pl-10">
+                            <li>Accédez à la page Inventaire.</li>
+                            <li>Cliquez sur le bouton "Filtre de recherche".</li>
+                            <li>Remplissez les filtres que vous souhaitez utiliser ou laissez-les vides pour afficher l'ensemble de l'inventaire disponible.</li>
+                            <li>Cliquez sur "Charger données" pour afficher les inventaires disponibles et leurs statuts.</li>
+                            <div class="relative overflow-hidden w-full h-full border-2 border-blue-900">
+                                <img loading="lazy" data-enlargable src="images/4.png" class="lazyloaded object-contain">
+                                <button type="button" class="btn-zoom-img w-[34px] h-[34px] bg-white rounded-full border border-black absolute bottom-0 right-0 flex items-center justify-center mr-4 mb-4 cursor-zoom-in">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="w-[20px] h-[20px]">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM10.5 7.5v6m3-3h-6" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </ol>
+                    </div>
+                    <div>
+                        <h3 id="s2-B" class="ml-6 md:text-lg text-base">B- Ajouter ou modifier un inventaire.</h3>
+                        <p class="text-right md:text-sm text-xs text-gray-600">Role: ADV, GDS</p>
+                        <ol class="list-decimal list-inside text-base md:space-y-4 space-y-2 pl-10">
+                            <li>Accédez à la page Inventaire.</li>
+                            <li>Sélectionnez un inventaire déjà existant pour modifier ou cliquez sur le bouton "Ajouter" pour inséré un inventaire.</li>
+                            <div class=" md:ml-12 ml-6">
+                                <p class="border-l-4 border-blue-900 p-4">Notez que lorsque vous cliquez sur "Ajouter" un inventaire, il sera ajouté immédiatement avec un statut "New".</p>
+                            </div>
+                            <li>Cliquez sur modifier pour ajouter la quantité.</li>
+                            <li>Comptez les produits dans le stock réel et ajoutez la quantité dans les trois colonnes (P, C, U) (palette, carton, unité) pour chaque produit.</li>
+                            <div class="md:ml-12 ml-6">
+                                <p class="border-l-4 border-blue-900 p-4">Ajoutez les quantités en fonction de leur emplacement respectif. (Disponible Inv, Endommagée Inv, Périmée Inv)</p>
+                            </div>
+                            <li>Cliquez sur "Valider" pour enregistrer vos modifications.</li>
+                            <div class="md:ml-12 ml-6">
+                                <p class="border-l-4 border-blue-900 p-4">Le système calcule automatiquement la quantité nécessaire pour remplir la colonne de quantité nécessaire. Si vous entrez une quantité de 9 pour (P, C et U), et qu’un carton peut contenir un maximum de 6 unités, le système ajustera la quantité à 9 palettes, 10 cartons et 3 unités.</p>
+                            </div>
+                            <!-- Glider -->
+                            <div class="relative overflow-hidden w-full h-full glider-contain border-2 border-blue-900">
+                                <div class="glider">
+                                    <div>
+                                        <img loading="lazy" data-enlargable src="images/5.png" class="lazyloaded object-top object-contain">
+                                    </div>
+                                    <div>
+                                        <img loading="lazy" data-enlargable src="images/6.png" class="lazyloaded object-top object-contain">
+                                    </div>
+                                    <div>
+                                        <img loading="lazy" data-enlargable src="images/7.png" class="lazyloaded object-top object-contain">
+                                    </div>
+                                    <div>
+                                        <img loading="lazy" data-enlargable src="images/8.png" class="lazyloaded object-top object-contain">
+                                    </div>
+                                </div>
+                                <button id="g-prev-0" aria-label="Previous"  type="button" class="g-prev absolute top-0 left-0 z-10 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none">
+                                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
+                                        <svg class="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                                        </svg>
+                                        <span class="sr-only">Previous</span>
+                                    </span>
+                                </button>
+                                <button id="g-next-0" aria-label="Next" type="button" class="absolute top-0 right-0 z-10 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none">
+                                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
+                                        <svg class="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                                        </svg>
+                                        <span class="sr-only">Next</span>
+                                    </span>
+                                </button>
+                                <button type="button" class="btn-zoom-img w-[34px] h-[34px] bg-white rounded-full border border-black absolute bottom-0 right-0 flex items-center justify-center mr-4 mb-4 cursor-zoom-in z-20">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="w-[20px] h-[20px]">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM10.5 7.5v6m3-3h-6" />
-                                </svg>
-                            </button>
-                        </div>
-                    </ol>
-                </div>
-                <div>
-                    <h3 id="s2-b" class="ml-6 md:text-lg text-base">b- Ajouter ou modifier un inventaire.</h3>
-                    <p class="text-right md:text-sm text-xs text-gray-600">Role: ADV, GDS</p>
-                    <ol class="list-decimal list-inside text-base md:space-y-4 space-y-2 pl-10">
-                        <li>Accédez à la page Inventaire.</li>
-                        <li>Sélectionnez un inventaire déjà existant pour modifier ou cliquez sur le bouton "Ajouter" pour inséré un inventaire.</li>
-                        <div class=" md:ml-12 ml-6">
-                            <p class="border-l-4 border-blue-900 p-4">Notez que lorsque vous cliquez sur "Ajouter" un inventaire, il sera ajouté immédiatement avec un statut "New".</p>
-                        </div>
-                        <li>Cliquez sur modifier pour ajouter la quantité.</li>
-                        <li>Comptez les produits dans le stock réel et ajoutez la quantité dans les trois colonnes (P, C, U) (palette, carton, unité) pour chaque produit.</li>
-                        <div class="md:ml-12 ml-6">
-                            <p class="border-l-4 border-blue-900 p-4">Ajoutez les quantités en fonction de leur emplacement respectif. (Disponible Inv, Endommagée Inv, Périmée Inv)</p>
-                        </div>
-                        <li>Cliquez sur "Valider" pour enregistrer vos modifications.</li>
-                        <div class="md:ml-12 ml-6">
-                            <p class="border-l-4 border-blue-900 p-4">Le système calcule automatiquement la quantité nécessaire pour remplir la colonne de quantité nécessaire. Si vous entrez une quantité de 9 pour (P, C et U), et qu’un carton peut contenir un maximum de 6 unités, le système ajustera la quantité à 9 palettes, 10 cartons et 3 unités.</p>
-                        </div>
-                        <!-- Glider -->
-                        <div class="relative overflow-hidden w-full h-full glider-contain border-2 border-blue-900">
-                            <div class="glider">
-                                <div>
-                                    <img loading="lazy" data-enlargable src="images/5.png" class="lazyloaded object-top object-contain">
-                                </div>
-                                <div>
-                                    <img loading="lazy" data-enlargable src="images/6.png" class="lazyloaded object-top object-contain">
-                                </div>
-                                <div>
-                                    <img loading="lazy" data-enlargable src="images/7.png" class="lazyloaded object-top object-contain">
-                                </div>
-                                <div>
-                                    <img loading="lazy" data-enlargable src="images/8.png" class="lazyloaded object-top object-contain">
-                                </div>
+                                    </svg>
+                                </button>
                             </div>
-                            <button id="g-prev-0" aria-label="Previous"  type="button" class="g-prev absolute top-0 left-0 z-10 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none">
-                                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
-                                    <svg class="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
-                                    </svg>
-                                    <span class="sr-only">Previous</span>
-                                </span>
-                            </button>
-                            <button id="g-next-0" aria-label="Next" type="button" class="absolute top-0 right-0 z-10 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none">
-                                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
-                                    <svg class="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
-                                    </svg>
-                                    <span class="sr-only">Next</span>
-                                </span>
-                            </button>
-                            <button type="button" class="btn-zoom-img w-[34px] h-[34px] bg-white rounded-full border border-black absolute bottom-0 right-0 flex items-center justify-center mr-4 mb-4 cursor-zoom-in z-20">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="w-[20px] h-[20px]">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM10.5 7.5v6m3-3h-6" />
-                                </svg>
-                            </button>
-                        </div>
-                        <div role="tablist" id="dots-0" class="dots z-20"></div>
-                        <div class="flex justify-center items-center">
-                            <p class="border-l-4 border-red-600 p-4">Après avoir ajouté un inventaire avec succès, assurez-vous de le clôturer pour mettre à jour le stock du système. Sinon, l'application pensera que vous êtes toujours en cours de processus d'inventaire.</p>
-                        </div>
-                    </ol>
-                </div>
-                <div class="">
-                    <h3 id="s2-c" class="ml-6 md:text-lg text-base">c- Fermez un inventaire ouvert.</h3>
-                    <p class="text-right md:text-sm text-xs text-gray-600">Role: GDS</p>
-                    <ol class="list-decimal list-inside text-base md:space-y-4 space-y-2 pl-10">
-                        <li>Accédez à la page Inventaire</li>
-                        <li>Sélectionnez l'inventaire à clôturer, identifié par le statut "New" (rectangle bleu avec le texte "New").</li>
-                        <li>Puis cliquez sur "Cloturer Inventaire" et "Valider".</li>
-                        <!-- Glider -->
-                        <div class="relative overflow-hidden w-full h-full glider-contain border-2 border-blue-900">
-                            <div class="glider">
-                                <div>
-                                    <img loading="lazy" data-enlargable src="images/9.png" class="lazyloaded object-top object-contain">
-                                </div>
-                                <div>
-                                    <img loading="lazy" data-enlargable src="images/10.png" class="lazyloaded object-top object-contain">
-                                </div>
-                                <div>
-                                    <img loading="lazy" data-enlargable src="images/11.png" class="lazyloaded object-top object-contain">
-                                </div>
+                            <div role="tablist" id="dots-0" class="dots z-20"></div>
+                            <div class="flex justify-center items-center">
+                                <p class="border-l-4 border-red-600 p-4">Après avoir ajouté un inventaire avec succès, assurez-vous de le clôturer pour mettre à jour le stock du système. Sinon, l'application pensera que vous êtes toujours en cours de processus d'inventaire.</p>
                             </div>
-                            <button id="g-prev-1" aria-label="Previous"  type="button" class="g-prev absolute top-0 left-0 z-10 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none">
-                                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
-                                    <svg class="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                        </ol>
+                    </div>
+                    <div>
+                        <h3 id="s2-C" class="ml-6 md:text-lg text-base">C- Fermez un inventaire ouvert.</h3>
+                        <p class="text-right md:text-sm text-xs text-gray-600">Role: GDS</p>
+                        <ol class="list-decimal list-inside text-base md:space-y-4 space-y-2 pl-10">
+                            <li>Accédez à la page Inventaire</li>
+                            <li>Sélectionnez l'inventaire à clôturer, identifié par le statut "New" (rectangle bleu avec le texte "New").</li>
+                            <li>Puis cliquez sur "Cloturer Inventaire" et "Valider".</li>
+                            <!-- Glider -->
+                            <div class="relative overflow-hidden w-full h-full glider-contain border-2 border-blue-900">
+                                <div class="glider">
+                                    <div>
+                                        <img loading="lazy" data-enlargable src="images/9.png" class="lazyloaded object-top object-contain">
+                                    </div>
+                                    <div>
+                                        <img loading="lazy" data-enlargable src="images/10.png" class="lazyloaded object-top object-contain">
+                                    </div>
+                                    <div>
+                                        <img loading="lazy" data-enlargable src="images/11.png" class="lazyloaded object-top object-contain">
+                                    </div>
+                                </div>
+                                <button id="g-prev-1" aria-label="Previous"  type="button" class="g-prev absolute top-0 left-0 z-10 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none">
+                                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
+                                        <svg class="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                                        </svg>
+                                        <span class="sr-only">Previous</span>
+                                    </span>
+                                </button>
+                                <button id="g-next-1" aria-label="Next" type="button" class="absolute top-0 right-0 z-10 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none">
+                                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
+                                        <svg class="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                                        </svg>
+                                        <span class="sr-only">Next</span>
+                                    </span>
+                                </button>
+                                <button type="button" class="btn-zoom-img w-[34px] h-[34px] bg-white rounded-full border border-black absolute bottom-0 right-0 flex items-center justify-center mr-4 mb-4 cursor-zoom-in z-20">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="w-[20px] h-[20px]">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM10.5 7.5v6m3-3h-6" />
                                     </svg>
-                                    <span class="sr-only">Previous</span>
-                                </span>
-                            </button>
-                            <button id="g-next-1" aria-label="Next" type="button" class="absolute top-0 right-0 z-10 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none">
-                                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
-                                    <svg class="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
-                                    </svg>
-                                    <span class="sr-only">Next</span>
-                                </span>
-                            </button>
-                            <button type="button" class="btn-zoom-img w-[34px] h-[34px] bg-white rounded-full border border-black absolute bottom-0 right-0 flex items-center justify-center mr-4 mb-4 cursor-zoom-in z-20">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="w-[20px] h-[20px]">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM10.5 7.5v6m3-3h-6" />
-                                </svg>
-                            </button>
-                        </div>
-                        <div role="tablist" id="dots-1" class="dots z-20"></div>
-                        <div class="md:ml-12 ml-6">
-                            <p class="border-l-4 border-orange-400 p-4">Veuillez noter que vous ne pourrez pas modifier ou supprimer un inventaire après l'avoir clôturé.</p>
-                        </div>
-                    </ol>
+                                </button>
+                            </div>
+                            <div role="tablist" id="dots-1" class="dots z-20"></div>
+                            <div class="md:ml-12 ml-6">
+                                <p class="border-l-4 border-orange-400 p-4">Veuillez noter que vous ne pourrez pas modifier ou supprimer un inventaire après l'avoir clôturé.</p>
+                            </div>
+                        </ol>
+                    </div>
                 </div>
             </div>
         </div>
