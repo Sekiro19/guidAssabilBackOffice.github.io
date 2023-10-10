@@ -156,16 +156,19 @@
                 <h2 id="s2" class="md:text-xl text-lg">II- Dispatch - Cage Van</h2>
                 <div class="space-y-4">
                     <div>
-                        <h3 id="s2-A" class="ml-6 md:text-lg text-base">A- Demande de chargement</h3>
+                        <div class="md:ml-12 ml-6">
+                            <p class="border-l-4 border-green-500 p-4">Les étapes de cette phase sont presque identiques pour le chargement et le déchargement ; suivez les images ci-dessous alors que nous le démontrons avec le chargement.</p>
+                        </div>
+                        <h3 id="s2-A" class="ml-6 md:text-lg text-base">A- Demande de chargement/déchargement</h3>
                         <p class="text-right md:text-sm text-xs text-gray-600">Role: DLV/VDD</p>
                         <ol class="list-decimal list-inside text-base md:space-y-4 space-y-2 pl-10">
                             <div>- Connectez-vous au compte du vendeur (DLV/VDD).</div>
-                            <li>Accédez à la page 'Demandes de Chargement', puis cliquez sur "AJOUTER NOUV".</li>
-                            <li>Ajouter la quantité de changement, cliquez sur la ligne correspondante au produit, puis saisissez la quantité dans les colonnes (Charge P, Charge U) (Charge carton, Charge unité).</li>
+                            <li>Accédez à la page "Demandes de (dé)chargement", puis cliquez sur "AJOUTER NOUV".</li>
+                            <li>Ajouter la quantité de (dé)changement, cliquez sur la ligne correspondante au produit, puis saisissez la quantité dans les colonnes (P, U) (carton, unité).</li>
                             <li>Cliquez "la flèche next".</li>
                             <li>Cliquez "Valider".</li>
-                            <li>Confirmer la demande de chargement "OUI".</li>
-                            <li>Retournez à la page "Demandes de chargement". Vous remarquerez que le statut est maintenant (0). Cliquez simplement sur l'icône de synchronisation et attendez que la synchronisation se termine.</li>
+                            <li>Confirmer la demande de (dé)chargement "OUI".</li>
+                            <li>Retournez à la page "Demandes de (dé)chargement". Vous remarquerez que le statut est maintenant (0). Cliquez simplement sur l'icône de synchronisation et attendez que la synchronisation se termine.</li>
                             <div class="flex items-center text-blue-900 font-semibold">Dispatch status &nbsp;<div class="bg-[#0986C9] rounded-lg w-f text-sm p-2 text-white">0 - Nouveau</div></div>   
                             <!-- Glider-2 -->
                             <div class="relative overflow-hidden w-full h-full glider-contain border-2 border-blue-900">
@@ -206,10 +209,10 @@
                         </ol>
                     </div>
                     <div>
-                        <h3 id="s2-B" class="ml-6 md:text-lg text-base">B- Confirmation les quantités requises pour le chargement</h3>
+                        <h3 id="s2-B" class="ml-6 md:text-lg text-base">B- Confirmation les quantités requises pour le chargement/déchargement</h3>
                         <p class="text-right md:text-sm text-xs text-gray-600">Role: ADV</p>
                         <ol class="list-decimal list-inside text-base md:space-y-4 space-y-2 pl-10">
-                            <li>Accédez à la page "Demandes de Transfert", puis charger les donnée et sélectionnez le nouveau chargement.</li>
+                            <li>Accédez à la page "Demandes de Transfert", puis charger les donnée et sélectionnez le nouveau (dé)chargement.</li>
                             <li>Cliquez "Confirmer Les Qantités Demandées"</li>
                             <li>Vérifiez la "Qty confirmée", puis cliquez sur 'Valider'.</li>
                             <div class="flex items-center text-blue-900 font-semibold">Dispatch status &nbsp;<div class="bg-[#FFA500] rounded-lg w-fit text-sm text-center p-2 text-white">10 - soumis au magasinier</div></div>
@@ -224,7 +227,7 @@
                         </ol>
                     </div>
                     <div>
-                        <h3 id="s2-C" class="ml-6 md:text-lg text-base">C- Valider le chargement.</h3>
+                        <h3 id="s2-C" class="ml-6 md:text-lg text-base">C- Valider le chargement/déchargement.</h3>
                         <p class="text-right md:text-sm text-xs text-gray-600">Role: GDS, DLV/VDD</p>
                         <ol class="list-decimal list-inside text-base md:space-y-4 space-y-2 pl-10">
                             <li>Accédez à la page "Demandes de Transfert" et chargez les données. Sélectionnez le transfert identifié par le statut "Soumis au magasinier" (rectangle orange)</li>
@@ -232,14 +235,14 @@
                             <div class="flex items-center text-blue-900 font-semibold">Dispatch status &nbsp;<div class="bg-[#8F8579] rounded-lg w-f text-sm p-2 text-white">30 - Ajusté</div></div>
                             <li>Cliquez sur le bouton "Soumettre Au Vendeur" pour transmettre les bons de livraison au compte du vendeur.</li>
                             <div class="flex items-center text-blue-900 font-semibold">Dispatch status &nbsp;<div class="bg-[#D3D3D3] rounded-lg w-fit text-sm text-center p-2 text-white">40 - Soumis au vendeur</div></div>
-                            <li>Connectez-vous au compte du vendeur (DLV/VDD) et accédez à la page "Demandes de chargement".</li>
+                            <li>Connectez-vous au compte du vendeur (DLV/VDD), accédez à la page "Demandes de (dé)chargement" et Cliquez sur l'icône de synchronisation.</li>
                             <div class="flex items-center text-blue-900 font-semibold">Dispatch status &nbsp;<div class="bg-[#FF00FF] rounded-lg w-f text-sm p-2 text-white">45 - Synchronisé</div></div>
-                            <li>Cliquez sur l'icône de synchronisation et attendez que la synchronisation se termine.Identifié le chargement par le statut (40), puis cliquez sur "Valider".</li>
+                            <li>Identifié le (dé)chargement par le statut (40), puis cliquez sur "Valider".</li>
                             <li>Cliquez "la flèche next".</li>
                             <li>Cliquez "Valider".</li>
-                            <li>Confirmer la validation du chargement "OUI".</li>
-                            <li>Retournez à la page "Demandes de chargement". Vous remarquerez que le statut est maintenant (50). Cliquez simplement sur l'icône de synchronisation et attendez que la synchronisation se termine.</li>
-                            <div class="flex items-center text-blue-900 font-semibold">Dispatch status &nbsp;<div class="bg-[#008000] rounded-lg w-f text-sm p-2 text-white">50 - Acceptée</div></div>   
+                            <li>Confirmer la validation du (dé)chargement "OUI".</li>
+                            <li>Retournez à la page "Demandes de (dé)chargement". Vous remarquerez que le statut est maintenant (50). Cliquez simplement sur l'icône de synchronisation et attendez que la synchronisation se termine.</li>
+                            <div class="flex items-center text-blue-900 font-semibold">Dispatch status &nbsp;<div class="bg-[#008000] rounded-lg w-f text-sm p-2 text-white">50 - Acceptée</div></div>
                             <!-- Glider-3 -->
                             <div class="relative overflow-hidden w-full h-full glider-contain border-2 border-blue-900">
                                 <div class="glider overflow-hidden">
