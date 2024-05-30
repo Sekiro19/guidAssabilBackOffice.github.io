@@ -20,7 +20,7 @@
         </div>
         <div class="py-2 inline-block min-w-full sm:px-6 lg:px-8 overflow-hidden space-y-4">
           <div class="flex items-center justify-end">
-            <input id="filter" type="search" name="q" class="h-12 md:w-64 w-full text-lg placeholder:text-gray-400 focus:outline-none p-4" aria-label="Filtre" placeholder="Filtre" value="">
+            <input id="filter" type="search" name="q" class="border border-black h-12 md:w-64 w-full text-lg placeholder:text-gray-400 focus:outline-none p-4" aria-label="Filtre" placeholder="Filtre" value="">
             <div class="flex items-center bg-black justify-center w-12 h-12 text-white">
                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
@@ -92,7 +92,7 @@
                     <div class="tab-content">
                       <div class="inline-flex flex-col ">
                         <ol class="z-10 list-inside list-roman space-y-2 ml-4 mt-4">
-                          <li><a class="hover:underline hover:decoration-gray-500" href="docs/d3.html#s1">Enregistrement des Mouvements de Stock</a></li>
+                          <li><a class="hover:underline hover:decoration-gray-500" href="docs/d3.html#s1">Enregistrement des Mouvements (Entrée/Sortie) de Stock</a></li>
                           <li><a class="hover:underline hover:decoration-gray-500" href="docs/d3.html#s2">Gérer l'inventaire de stock.</a></li>
                           <ol class="z-10 list-inside list-upperAlpha">
                             <li class="ml-4"><a class="hover:underline hover:decoration-gray-500" href="docs/d3.html#s2-A">Afficher les inventaire.</a></li>
@@ -112,7 +112,7 @@
                   <div class="tab relative">
                     <input class="w-full absolute z-10 cursor-pointer opacity-0 h-full top-0" type="checkbox">
                     <header class="flex justify-between items-center cursor-pointer select-none tab-label">
-                      <a class="hover:underline hover:decoration-gray-500 z-10" href="docs/d4.html">Transfert des commandes (Dispatch)</a>
+                      <a class="hover:underline hover:decoration-gray-500 z-10" href="docs/d4.html">Transferts et Chargements (Dispatch)</a>
                       <div class="rotate-svg">
                           <svg aria-hidden="true" class="" data-reactid="266" fill="none" height="24" stroke="#606F7B" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
                               <polyline points="6 9 12 15 18 9">
@@ -126,22 +126,55 @@
                           <li><a class="hover:underline hover:decoration-gray-500" href="docs/d4.html#s1">Dispatch Livraison</a></li>
                           <ol class="z-10 list-inside list-upperAlpha">
                             <li class="ml-4">
-                              <a class="hover:underline hover:decoration-gray-500" href="docs/d4.html#s1-A">Manuel</a>
+                              <a class="hover:underline hover:decoration-gray-500" href="docs/d4.html#s1-A">Auto</a>
                               <ol class="z-10 list-inside">
                                 <li class="ml-4"><a class="hover:underline hover:decoration-gray-500" href="docs/d4.html#s1-A-1">- Demande de chargement.</a></li>
-                                <li class="ml-4"><a class="hover:underline hover:decoration-gray-500" href="docs/d4.html#s1-A-2">- Valider le chargement.</a></li>
+                                <li class="ml-4"><a class="hover:underline hover:decoration-gray-500" href="docs/d4.html#s1-A-2">- Validation de chargement.</a></li>
                               </ol>
                             </li>
-                            <li class="ml-4"><a class="hover:underline hover:decoration-gray-500" href="docs/d4.html#s1-B">Auto</a></li>
+                            <li class="ml-4">
+                              <a class="hover:underline hover:decoration-gray-500" href="docs/d4.html#s1-B">Manuel</a>
+                              <ol class="z-10 list-inside">
+                                <li class="ml-4"><a class="hover:underline hover:decoration-gray-500" href="docs/d4.html#s1-B-1">- Demande de chargement.</a></li>
+                                <li class="ml-4"><a class="hover:underline hover:decoration-gray-500" href="docs/d4.html#s1-B-2">- Validation de chargement.</a></li>
+                              </ol>
+                            </li>
                           </ol>
                           <li>
-                            <a class="hover:underline hover:decoration-gray-500" href="docs/d4.html#s2">Dispatch Cage Van</a>
+                            <a class="hover:underline hover:decoration-gray-500" href="docs/d4.html#s2">Dispatch Cash-Van</a>
                           </li>
                           <ol class="z-10 list-inside list-upperAlpha">
                             <li class="ml-4"><a class="hover:underline hover:decoration-gray-500" href="docs/d4.html#s2-A">Demande de (dé)chargement.</a></li>
-                            <li class="ml-4"><a class="hover:underline hover:decoration-gray-500" href="docs/d4.html#s2-B">Confirmation les quantités requises pour le (dé)chargement.</a></li>
+                            <li class="ml-4"><a class="hover:underline hover:decoration-gray-500" href="docs/d4.html#s2-B">Confirmation des quantités requises pour le (dé)chargement.</a></li>
                             <li class="ml-4"><a class="hover:underline hover:decoration-gray-500" href="docs/d4.html#s2-C">Valider le (dé)chargement.</a></li>
                           </ol>
+                        </ol>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <!-- 5 -->
+              <tr class="bg-white border-b transition duration-300 ease-in-out hover:bg-gray-100">
+                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900 align-top">5</td>
+                <td class="md:text-lg text-base text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                  <div class="tab relative">
+                    <input class="w-full absolute z-10 cursor-pointer opacity-0 h-full top-0" type="checkbox">
+                    <header class="flex justify-between items-center cursor-pointer select-none tab-label">
+                      <a class="hover:underline hover:decoration-gray-500 z-10" href="#">Supervision</a>
+                      <div class="rotate-svg">
+                          <svg aria-hidden="true" class="" data-reactid="266" fill="none" height="24" stroke="#606F7B" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                              <polyline points="6 9 12 15 18 9">
+                              </polyline>
+                          </svg>
+                      </div>
+                    </header>
+                    <div class="tab-content">
+                      <div class="inline-flex flex-col">
+                        <ol class="z-10 list-inside list-roman space-y-2 ml-4 mt-4">
+                          <li><a class="hover:underline hover:decoration-gray-500" href="#">Validation des quotas</a></li>
+                          <li><a class="z-10 hover:underline hover:decoration-gray-500" href="#">Sales Monitoring</a></li>
+                          <li><a class="z-10 hover:underline hover:decoration-gray-500" href="#">Repport</a></li>
                         </ol>
                       </div>
                     </div>
