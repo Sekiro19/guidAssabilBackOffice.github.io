@@ -188,19 +188,18 @@
     <!-- JS -->
     <script type="text/javascript" src="js/jquery-3.7.1.min.js"></script>
     <script>
-      $(document).ready(function(){
-        $("#filter").on("keyup input", function() {
+       $(document).ready(function(){
+        $('#filter').on('keyup', function() {
           var value = removeDiacritics($(this).val().toLowerCase());
-          $("tbody tr").filter(function() {
+          $('tbody tr').filter(function() {
             var rowText = removeDiacritics($(this).text().toLowerCase());
-            var match = rowText.indexOf(value) > -1;
-            $(this).toggle(match);
-            if (match) {
+            if (rowText.indexOf(value) > -1) {
               $(this).find('input[type="checkbox"]').prop('checked', true);
+            } else {
+              $(this).find('input[type="checkbox"]').prop('checked', false);
             }
           });
         });
-
         function removeDiacritics(str) {
             return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
         }
