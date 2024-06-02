@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/output.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/glider.min.css">
+    <title>Assabil - Supervision</title>
+</head>
+<body>
+    <main class="max-w-5xl mx-auto md:p-8 p-4">
+        <a class="hover:bg-gray-200 w-12 h-12 flex items-center justify-center fixed md:right-4 right-2 md:top-4 top-2" href="../index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="md:w-8 md:h-8 w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 15L3 9m0 0l6-6M3 9h12a6 6 0 010 12h-3" />
+            </svg>
+        </a>
+        <h1 id="title" class="md:text-3xl text-xl text-center text-blue-900 md:mb-16 mb-8">Quotas & Sales Monitoring</h1>
+        <div class="space-y-8">
+            <div class="md:space-y-5 space-y-2">
+                <h2 id="s1" class="md:text-xl text-lg">I- Quotas Prévente Qtés</h2>
+                <div class="space-y-4">
+                    <p class="text-right md:text-sm text-xs text-gray-600">Role: SV / ADV</p>
+                    <ol class="list-decimal list-inside text-base md:space-y-4 space-y-2 pl-10">
+                        <li>Accédez à la page "Quotas prévente Qtés".</li>
+                        <li>Dans le filtre de recherche décocher "lui-même", puis cliquer sur "Charger Données".</li>
+                        <li>Cliquez sur la zone grise pour développer la liste des produits et les prévendeurs.</li>
+                        <li>
+                            Pour définir une quantité fixe, remplissez les colonnes "Pack" et "Unité".
+                            <ul class="list-disc pl-12">
+                                <li>Pour verrouiller le produit, entrez des zéros "0".</li>
+                                <li>Pour rendre la quantité illimitée, laissez les cases vides.</li>
+                                <li>La colonne "Dispo" indique la quantité restante pour les fournisseurs.  </li>
+                            </ul>
+                        </li>
+                        <li>Cliquer sur "Valider" après avoir rempli et vérifié les données du quota.</li>
+                        <div class="md:ml-12 ml-6">
+                            <p class="border-l-4 border-green-500 p-4">les changements seront appliqués lorsque le prévendeur effectuera une synchronisation complète.</p>
+                        </div>
+                        <div class="relative overflow-hidden w-full h-full">
+                            <img loading="lazy" data-enlargable src="images/30.png" class="lazyloaded border-2 border-blue-900">
+                            <button type="button" class="btn-zoom-img w-[34px] h-[34px] bg-white rounded-full border border-black absolute bottom-0 right-0 flex items-center justify-center mr-4 mb-4 cursor-zoom-in">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="w-[20px] h-[20px]">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM10.5 7.5v6m3-3h-6" />
+                                </svg>
+                            </button>
+                        </div>
+                    </ol>
+                </div>
+            </div>
+            <div class="md:space-y-5 space-y-2">
+                <h2 id="s2" class="md:text-xl text-lg space-y-2">II- Sales Monitoring</h2>
+                <div class="space-y-4">
+                    <p class="text-right md:text-sm text-xs text-gray-600">Role: SV</p>
+                    <ol class="list-decimal list-inside text-base md:space-y-4 space-y-2 pl-10">
+                        <li>Accédez à la page "Sales Monitoring".</li>
+                        <li>Dans le filtre de recherche saisie la "Date".</li>
+                        <li>Remplir le "Code Role" (code route).</li>
+                        <li>Cliquer sur "Charger Données".</li>
+                        <li>Cliquez sur le texte bleu pour développer les détails des visites (l'heurs de visite, montant, etc...)</li>
+                        <!-- Glider-0 -->
+                        <div class="relative overflow-hidden w-full h-full glider-contain border-2 border-blue-900">
+                            <div class="glider overflow-hidden">
+                                <div class="flex justify-center items-center">
+                                    <img loading="lazy" data-enlargable src="images/31.png" class="lazyloaded md:w-[700px]">
+                                </div>
+                                <div class="flex justify-center items-center">
+                                    <img loading="lazy" data-enlargable src="images/32.png" class="lazyloaded">
+                                </div>
+                            </div>
+                            <button id="g-prev-0" aria-label="Previous"  type="button" class="g-prev absolute top-0 left-0 z-10 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none">
+                                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
+                                    <svg class="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                                    </svg>
+                                    <span class="sr-only">Previous</span>
+                                </span>
+                            </button>
+                            <button id="g-next-0" aria-label="Next" type="button" class="absolute top-0 right-0 z-10 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none">
+                                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
+                                    <svg class="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                                    </svg>
+                                    <span class="sr-only">Next</span>
+                                </span>
+                            </button>
+                            <button type="button" class="btn-zoom-img w-[34px] h-[34px] bg-white rounded-full border border-black absolute bottom-0 right-0 flex items-center justify-center mr-4 mb-4 cursor-zoom-in z-20">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="w-[20px] h-[20px]">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM10.5 7.5v6m3-3h-6" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div role="tablist" id="dots-0" class="dots z-20"></div>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script type="text/javascript" src="../js/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="../js/pinch-zoom.umd.js"></script>
+    <script type="text/javascript" src="../js/glider.min.js"></script>
+    <script type="text/javascript" src="../js/docs.js"></script>
+    <script>
+        $(document).ready(function() {
+        $('.glider').each(function(index) {
+            new Glider($(this)[0], {
+            dots: '#dots-' + index,
+            arrows: {
+                prev: '#g-prev-' + index,
+                next: '#g-next-' + index
+            },
+            scrollLock: true,
+            draggable: true,
+            dragVelocity: 2,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            duration: 0.3,
+            scrollLockDelay: 250,
+            scrollPropagate: true,
+            dragVelocity: 3.3
+            });
+        });
+        });
+    </script>
+</body>
+</html>
