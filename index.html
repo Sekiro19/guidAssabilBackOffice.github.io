@@ -216,7 +216,7 @@
     <script type="text/javascript" src="js/jquery-3.7.1.min.js"></script>
     <script>
       $(document).ready(function() {
-          $('#filter').on('keyup', function() {
+          $('#filter').on('input', function() {
               var value = removeDiacritics($(this).val().toLowerCase());
               $('tbody tr').each(function() {
                   var rowText = removeDiacritics($(this).text().toLowerCase());
@@ -234,7 +234,6 @@
                   }
               });
           });
-
           function removeDiacritics(str) {
               return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
           }
